@@ -1,0 +1,58 @@
+<form>
+	사용자가 입력한 값을 전달하기 위한 태그
+
+<label>
+	입력값의 label을 붙여주는 태그
+	<label>레이블<input></label>
+	<label for="id값">레이블</label><input id="id값">
+
+<fieldset>
+	form 태그 내에서 영역을 구분하기 위해 사용하는 태그
+
+<legend>
+	fieldset 태그 내에서 사용되며, 해당 fieldset에 이름을 붙여준다
+
+<input>
+	type 속성에 다양한 값을 전달하여 원하는 양식을 입력 받는다.
+	text, url, date, number,...
+
+<select>
+	드롭다운 목록을 보여준다.
+
+<option> 
+	select 태그 안쪽에 사용하며, 드롭다운 목록을 작성하는 태그
+
+<textarea>
+	여러 줄의 문자를 입력하는 태그
+
+<datalist>
+	자동완성기능
+	텍스트를 입력할 때 미리 설정해준 값을 보여주도록 한다.
+
+<option>
+	datalist 안쪽에 사용될 목록 요소를 알려준다.
+
+	<input type ="text" list="데이터리스트아이디">
+	<datalist id="데이터리스트아이디">
+		<option>옵션1</option>
+		<option>옵션2</option>
+	</datalist>
+
+<button>
+	버튼을 입력받는 태그
+	type속성에는 "submit", "reset", "button"
+
+input 태그의 다양한 속성
+	type : 입력받는 값의 종류 text, email, date,....
+		"hidden" :  사용자에게 보이지 않는 input 타입
+	placeholder : 입력값 힌트를 표시하는 속성
+	readonly : 읽기 전용, 값 수정 불가능(속성값X)
+	required : 필수항목, 비워둔채로 전송 불가능(속성값X)
+	max : 숫자입력받는 경우, 최댓값 지정
+	min : 숫자입력받는 경우, 최솟값 지정
+	step : 숫자입력받는 경우, 간격 지정
+		<input type="number" max="50" min="30" step="5">
+	maxlength : 문자를 입력 받는 경우, 최대 길이 지정
+	minlength : 문자를 입력 받는 경우, 최소 길이 지정
+	size : 문자를 입력 받는 경우, 화면에 표시할 크기 지정(단위:문자갯수)
+	list: 사용할 데이터리스트 id를 알려주는 태그
