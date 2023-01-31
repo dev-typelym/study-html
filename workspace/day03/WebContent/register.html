@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="./kurlyfavicon.ico" type="image/x-icon"
+	sizes="16x16">
+<title>회원가입 - 컬리</title>
+<style>
+[type="radio"] {
+	vertical-align: middle;
+	appearance: none;
+	border: max(2px, 0.1em) solid gray;
+	border-radius: 50%;
+	width: 26px;;
+	height: 26px;
+}
+
+[type="radio"]:checked {
+	border: 7.5px solid rgb(95, 0, 128);
+}
+
+[type="radio"]:focus-visible {
+	outline-offset: max(2px, 0.1em);
+	outline: max(2px, 0.1em) dotted rgb(95, 0, 128);
+}
+</style>
+</head>
+<body>
+	<center>
+		<h2 style="margin-top: 50px; margin-bottom: 50px; font-size: 28px;">회원가입</h2>
+		<div style="width: 640px; height: 28.45px;">
+			<div
+				style="text-align: right; padding-bottom: 10px; font-size: 12px;">
+				<span
+					style="width: 5.61px; height: 17.45px; color: rgb(238, 106, 123);">*</span>필수입력사항
+			</div>
+			<div style="border-style: solid none; border-width: 2px;">
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">
+						아이디<span
+							style="width: 5.61px; height: 17.45px; color: rgb(238, 106, 123);">*</span>
+					</div>
+					<input
+						style="width: 325.8px; height: 43.545px; border-radius: 4px; font-size: 16px;"
+						type="text" placeholder="  아이디를 입력해주세요" name="userId" required
+						autocomplete="none">
+					<button
+						style="width: 120px; height: 44px; border: 1px solid rgb(95, 0, 128); border-radius: 4px; background-color: rgb(255, 255, 255); margin-left: 8px; font-size: 14px; font-weight: bold;"
+						type="submit">
+						<span style="color: rgb(95, 0, 128);">중복확인</span>
+					</button>
+				</div>
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">
+						비밀번호<span
+							style="width: 5.61px; height: 17.45px; color: rgb(238, 106, 123);">*</span>
+					</div>
+					<input
+						style="width: 333px; height: 46px; border-radius: 4px; font-size: 16px;"
+						type="text" placeholder="  비밀번호를 입력해주세요" name="userPassword"
+						required autocomplete="none">
+				</div>
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">
+						비밀번호확인<span
+							style="width: 5.61px; height: 17.45px; color: rgb(238, 106, 123);">*</span>
+					</div>
+					<input
+						style="width: 333px; height: 46px; border-radius: 4px; font-size: 16px;"
+						type="text" placeholder="  비밀번호를 한번 더 입력해주세요" name="userPassword"
+						required autocomplete="none">
+				</div>
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">
+						이름<span
+							style="width: 5.61px; height: 17.45px; color: rgb(238, 106, 123);">*</span>
+					</div>
+					<input
+						style="width: 333px; height: 46px; border-radius: 4px; font-size: 16px;"
+						type="text" placeholder="  이름을 입력해 주세요" name="userName" required
+						autocomplete="none">
+				</div>
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">
+						이메일<span
+							style="width: 5.61px; height: 17.45px; color: rgb(238, 106, 123);">*</span>
+					</div>
+					<input
+						style="width: 333px; height: 46px; border-radius: 4px; font-size: 16px;"
+						type="text" placeholder="  예: marketkurly@kurly.com"
+						name="userEmail" required autocomplete="none">
+					<button
+						style="width: 120px; height: 44px; border: 1px solid rgb(95, 0, 128); border-radius: 4px; background-color: rgb(255, 255, 255); margin-left: 8px; font-size: 14px; font-weight: bold;"
+						type="submit">
+						<span style="color: rgb(95, 0, 128);">중복확인</span>
+					</button>
+				</div>
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">
+						휴대폰<span
+							style="width: 5.61px; height: 17.45px; color: rgb(238, 106, 123);">*</span>
+					</div>
+					<input
+						style="width: 333px; height: 46px; border-radius: 4px; font-size: 16px;"
+						type="text" placeholder="  숫자만 입력해주세요." name="userPhone" required
+						autocomplete="none">
+					<button
+						style="width: 120px; height: 44px; border: 1px solid gray; border-radius: 4px; background-color: rgb(255, 255, 255); margin-left: 8px; font-size: 14px; font-weight: bold; filter: grayscale(100%); filter: opacity(50%);"
+						type="submit">
+						<span style="color: gray;">인증번호 받기</span>
+					</button>
+				</div>
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">
+						주소<span
+							style="width: 5.61px; height: 17.45px; color: rgb(238, 106, 123);">*</span>
+					</div>
+					<button
+						style="width: 340.2px; height: 51.2px; border: 1px solid rgb(95, 0, 128); background-color: rgb(255, 255, 255); border-radius: 4px;"
+						type="submit">
+						<span
+							style="color: rgb(95, 0, 128); font-weight: bold; font-size: 14px"><img
+							src=https://res.kurly.com/pc/service/cart/2007/ico_search.svg>주소
+							검색</span>
+					</button>
+				</div>
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">성별</div>
+					<div style="display: inline-block; width: 333px; height: 45px;">
+						<label style=""font-size: 14px;"><input type="radio"
+							name="gender" value="남"> 남자</label> <label
+							style="margin-left: 43px; font-size: 14px;"><input
+							type="radio" name="gender" value="여"> 여자</label> <label
+							style="margin-left: 43px; font-size: 14px;"><input
+							type="radio" name="gender" value="선택안함" checked> 선택안함</label>
+					</div>
+				</div>
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">생년월일</div>
+					<input style="width: 333px; height: 44px;" type="date">
+				</div>
+				<div
+					style="text-align: left; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+					<div
+						style="display: inline-block; width: 139px; height: 48px; font-size: 14px; font-weight: bold;">추가입력
+						사항</div>
+					<label><input type="radio" name="plus" value="추천인">
+						친구초대 추천인 아이
+					</label> 
+					<label><input type="radio" name="plus"value="참여이벤트">
+						 참여 이벤트명
+					</label>
+				</div>
+			</div>
+			<div style="padding: 10px; padding-left: 20px;">
+				<div
+					style="text-align: left; padding-top: 12px; padding-bottom: 8px; font-size: 14px; font-weight: bold;">
+					이용약관동의<span
+						style="width: 5.61px; height: 17.45px; color: rgb(238, 106, 123);">*</span>
+					<label style="font-size: 18px; margin-left: 50px;"><input
+						type="checkbox" name="terms" value="전체"> 전체 동의합니다.</label>
+				</div>
+				<div style="font-size: 12px; margin-left: 145px;">선택항목에 동의하지
+					않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
+				<div
+					style="padding-top: 12px; padding-bottom: 8px; text-align: left; margin-left: 145px;">
+					<label style="font-size: 14px;"><input type="checkbox"
+						name="terms" value="이용약관"> 이용약관동의 (필수)</label>
+				</div>
+				<div
+					style="padding-top: 12px; padding-bottom: 8px; text-align: left; margin-left: 145px;">
+					<label style="font-size: 14px;"><input type="checkbox"
+						name="terms" value="개인정보수집1"> 개인정보 수집∙이용 동의 (필수)</label>
+				</div>
+				<div
+					style="padding-top: 12px; padding-bottom: 8px; text-align: left; margin-left: 145px;">
+					<label style="font-size: 14px;"><input type="checkbox"
+						name="terms" value="개인정보수집2"> 개인정보 수집∙이용 동의 (선택)</label>
+				</div>
+				<div
+					style="padding-top: 12px; padding-bottom: 8px; text-align: left; margin-left: 145px;">
+					<label style="font-size: 14px;"><input type="checkbox"
+						name="terms" value="정보수신동의"> 무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</label>
+				</div>
+				<div
+					style="padding-top: 12px; padding-bottom: 8px; text-align: left; margin-left: 160px;">
+					<label style="font-size: 14px;"><input type="checkbox"
+						name="terms" value="SMS"> SMS</label> <label
+						style="font-size: 14px;"><input type="checkbox"
+						name="terms" value="이메일"> 이메일</label>
+				</div>
+				<div
+					style="padding-bottom: 8px; text-align: left; margin-left: 185px; font-size: 12px; font-weight: bold; color: rgb(95, 0, 128);">
+					ㄴ동의 시 한달간[5%적립]+[2만원 이상 무료배송]첫 주문 후 안내</div>
+				<div
+					style="padding-top: 12px; padding-bottom: 8px; text-align: left; margin-left: 145px;">
+					<label style="font-size: 14px;"><input type="checkbox"
+						name="terms" value="14세이상"> 본인은 만 14세 이상입니다. (필수)</label>
+				</div>
+			</div>
+			<div style="padding-top: 40px; padding-bottom: 40px;">
+				<button
+					style="width: 240px; height: 56px; border: 1px solid rgb(95, 0, 128); background-color: rgb(95, 0, 128); border-radius: 4px;"
+					type="submit">
+					<span style="color: rgb(255, 255, 255); font-size: 16px;">가입하기</span>
+				</button>
+			</div>
+		</div>
+		</div>
+	</center>
+</body>
+</html>

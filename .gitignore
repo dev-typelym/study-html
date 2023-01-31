@@ -7,6 +7,9 @@
 # link
 *.lnk
 
+# Servers
+**/Servers
+
 # resource
 **/resource
 
